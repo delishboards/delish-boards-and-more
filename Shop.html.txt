@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — Delish Boards & More</title>
+  <meta name="description" content="Shop gifts and add-ons from Delish Boards & More." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <svg width="48" height="48" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="4" fill="none"/><path d="M28 62c8-8 20-26 44-18" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+        <span class="brand">Delish Boards & More</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button id="mobile-nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="boards.html">Boards</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cta-btn" href="contact.html">Order Now</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>Shop</h2>
+      <p class="section-sub">Gifts, tools, and ready-made items.</p>
+
+      <div class="shop-grid" id="shop-grid">
+        <div class="product" data-id="serving-knife">
+          <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?q=80&w=1200&auto=format&fit=crop" alt="Serving knife">
+          <div class="product-body">
+            <h3>Serving Knife</h3>
+            <p>Deluxe wooden serving knife — great gift.</p>
+            <p class="price">$12.00</p>
+            <button class="btn add-to-cart">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="product" data-id="mini-board">
+          <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c18?q=80&w=1200&auto=format&fit=crop" alt="Mini board">
+          <div class="product-body">
+            <h3>Mini Board (for 1)</h3>
+            <p>Perfect for date-night or a personal snack board.</p>
+            <p class="price">$18.00</p>
+            <button class="btn add-to-cart">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="product" data-id="preserve-jar">
+          <img src="https://images.unsplash.com/photo-1517686469429-8a5e3d8b3c4b?q=80&w=1200&auto=format&fit=crop" alt="Jam jar">
+          <div class="product-body">
+            <h3>House Preserve (8oz)</h3>
+            <p>Small-batch jam made in-house — seasonal flavours.</p>
+            <p class="price">$8.00</p>
+            <button class="btn add-to-cart">Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-summary" id="cart-summary" aria-live="polite">
+        <strong>Cart:</strong> <span id="cart-count">0</span> items — <span id="cart-total">$0.00</span>
+        <button class="btn small" id="view-cart">View Cart</button>
+        <button class="btn primary" id="checkout-btn">Checkout</button>
+      </div>
+
+      <!-- cart modal -->
+      <div id="cart-modal" class="modal" aria-hidden="true" role="dialog" aria-label="Cart">
+        <button class="modal-close" id="cart-close" aria-label="Close cart">&times;</button>
+        <div class="cart-content">
+          <h3>Your Cart</h3>
+          <ul id="cart-items"></ul>
+          <p class="cart-total">Total: <span id="cart-total-amount">$0.00</span></p>
+          <button id="checkout" class="btn primary">Proceed to Checkout</button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Delish Boards & More</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="https://www.instagram.com/delishboardsandmore?igsh=MTV1NzhvenVrMXdlcA%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Delish Boards & More</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><svg width="48" height="48" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="4" fill="none"/><path d="M28 62c8-8 20-26 44-18" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/></svg><span class="brand">Delish Boards & More</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button id="mobile-nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="boards.html">Boards</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cta-btn" href="contact.html">Order Now</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section contact-section">
+      <h2>Contact & Bookings</h2>
+      <p class="section-sub">Tell us about your event — we’ll send a custom quote.</p>
+
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+          <label><span>Name</span><input name="name" required></label>
+          <label><span>Email</span><input name="email" type="email" required></label>
+          <label><span>Phone</span><input name="phone" type="tel" value="512-801-5359"></label>
+          <label><span>Event Date</span><input name="date" type="date"></label>
+          <label><span>Message / Request</span><textarea name="message" rows="5" placeholder="Guest count, board styles, budget..."></textarea></label>
+          <button class="btn primary" type="submit">Send Request</button>
+        </form>
+
+        <div class="contact-info">
+          <h3>Find us</h3>
+          <p><strong>Email</strong> DelishBoardsandMore@gmail.com</p>
+          <p><strong>Phone</strong> 512-801-5359</p>
+          <p><strong>Service area</strong> Liberty Hill & Austin Metro area</p>
+
+          <h4>Hours</h4>
+          <p>Mon–Fri: 9am — 6pm<br>Sat: 9am — 4pm<br>Sun: Closed</p>
+
+          <p><a href="https://www.instagram.com/delishboardsandmore?igsh=MTV1NzhvenVrMXdlcA%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Delish Boards & More</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Delish Boards & More — Custom Grazing Boards</title>
+  <meta name="description" content="Delish Boards & More — custom grazing boards, charcuterie and dessert boards for Liberty Hill & Austin metro." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <svg width="48" height="48" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="4" fill="none"/><path d="M28 62c8-8 20-26 44-18" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+        <span class="brand">Delish Boards & More</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button id="mobile-nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="boards.html">Boards</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="cta-btn" href="contact.html">Order Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1>Delish Boards & More</h1>
+          <p class="lead">Custom grazing boards & catering for every occasion.</p>
+          <p class="kicker">Liberty Hill & Austin Metro — pickup & local delivery</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="boards.html">View Boards</a>
+            <a class="btn outline" href="contact.html">Get a Quote</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1200&auto=format&fit=crop" alt="Grazing board with cheese and fruit">
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2>Popular Boards</h2>
+      <p class="section-sub">Ready-made and custom options — sizes for parties and gatherings.</p>
+      <div class="cards-grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1543332164-58b5f2f7b9f1?q=80&w=1200&auto=format&fit=crop" alt="Classic Charcuterie">
+          <div class="card-body">
+            <h3>Classic Charcuterie</h3>
+            <p>Meats, artisan cheeses, seasonal fruit, nuts, and house preserves. Serves 4–8.</p>
+            <p class="price">From $45</p>
+            <a class="btn small" href="contact.html">Order</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1528712306091-ed0763094c98?q=80&w=1200&auto=format&fit=crop" alt="Dessert Board">
+          <div class="card-body">
+            <h3>Dessert Delight</h3>
+            <p>Mini desserts, cookies, chocolate-dipped fruit — perfect for parties.</p>
+            <p class="price">From $55</p>
+            <a class="btn small" href="contact.html">Order</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop" alt="Vegan Board">
+          <div class="card-body">
+            <h3>Vegan & Plant-based</h3>
+            <p>Hummus, marinated veggies, fresh fruit, and vegan cheeses.</p>
+            <p class="price">From $50</p>
+            <a class="btn small" href="contact.html">Order</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Delish Boards & More — Liberty Hill & Austin metro</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="https://www.instagram.com/delishboardsandmore?igsh=MTV1NzhvenVrMXdlcA%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

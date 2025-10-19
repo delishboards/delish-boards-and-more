@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product — Delish Boards & More</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- header same as others -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><svg width="48" height="48" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="4" fill="none"/><path d="M28 62c8-8 20-26 44-18" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/></svg><span class="brand">Delish Boards & More</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button id="mobile-nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="boards.html">Boards</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cta-btn" href="contact.html">Order Now</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section product-page">
+      <div class="product-detail">
+        <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?q=80&w=1200&auto=format&fit=crop" alt="Product image" style="max-width:460px;width:100%;border-radius:12px">
+        <div class="product-info">
+          <h1 id="product-title">Serving Knife</h1>
+          <p id="product-desc">Deluxe wooden serving knife — great gift.</p>
+          <p id="product-price" class="price">$12.00</p>
+          <button id="add-single" class="btn primary">Add to cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Delish Boards & More</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    // Example: wire the button to the cart (main.js handles add-to-cart buttons site-wide)
+    document.getElementById('add-single')?.addEventListener('click', () => {
+      // create a temporary product object and add to cart via same localStorage schema
+      const product = { id: 'serving-knife', title: document.getElementById('product-title').textContent, price: 12.00 };
+      const cart = JSON.parse(localStorage.getItem('delish_cart') || '[]');
+      const existing = cart.find(i => i.id === product.id);
+      if (existing) existing.qty += 1;
+      else cart.push({...product, qty:1});
+      localStorage.setItem('delish_cart', JSON.stringify(cart));
+      alert('Added to cart');
+      location.href = 'shop.html';
+    });
+  </script>
+</body>
+</html>

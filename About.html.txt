@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Delish Boards & More</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><svg width="48" height="48" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="4" fill="none"/><path d="M28 62c8-8 20-26 44-18" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/></svg><span class="brand">Delish Boards & More</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button id="mobile-nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="boards.html">Boards</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cta-btn" href="contact.html">Order Now</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>About Us</h2>
+      <p>Delish Boards & More is a local, family-run business serving Liberty Hill and the greater Austin metro. We craft beautiful grazing boards with seasonal, locally-sourced ingredients.</p>
+      <ul class="about-list">
+        <li>Locally sourced ingredients</li>
+        <li>Wedding & event packages</li>
+        <li>Custom dietary accommodations</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Delish Boards & More</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

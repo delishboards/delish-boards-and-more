@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Boards — Delish Boards & More</title>
+  <meta name="description" content="Menus and board options from Delish Boards & More — Classic Charcuterie, Dessert, Vegan options." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- same header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <svg width="48" height="48" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="4" fill="none"/><path d="M28 62c8-8 20-26 44-18" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+        <span class="brand">Delish Boards & More</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button id="mobile-nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="boards.html">Boards</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cta-btn" href="contact.html">Order Now</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>Boards & Menus</h2>
+      <p class="section-sub">Choose a ready-made board or request a custom menu.</p>
+
+      <div class="boards-list">
+        <article class="board">
+          <h3>Classic Charcuterie</h3>
+          <p>Artisan meats, three cheeses, olives, seasonal fruit, nuts, crackers, house jam.</p>
+          <p><strong>Sizes:</strong> Small (4–6), Medium (8–12), Large (12–20)</p>
+          <p class="price">Starting at $45</p>
+          <a class="btn small" href="contact.html">Request this board</a>
+        </article>
+
+        <article class="board">
+          <h3>Dessert Delight</h3>
+          <p>Assortment of mini desserts, chocolate-dipped fruit, cookies, and pastries.</p>
+          <p class="price">Starting at $55</p>
+          <a class="btn small" href="contact.html">Request this board</a>
+        </article>
+
+        <article class="board">
+          <h3>Vegan & Plant-based</h3>
+          <p>Seasonal vegetables, spreads, vegan cheeses and curated sides.</p>
+          <p class="price">Starting at $50</p>
+          <a class="btn small" href="contact.html">Request this board</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Delish Boards & More</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="https://www.instagram.com/delishboardsandmore?igsh=MTV1NzhvenVrMXdlcA%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
