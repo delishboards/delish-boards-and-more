@@ -1,0 +1,92 @@
+:root{
+  --bg:#fff;
+  --accent:#9b4d2b;
+  --accent-2:#f2cfa8;
+  --muted:#666;
+  --max-w:1100px;
+  --radius:10px;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  color:#222;
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+.container{width:92%;max-width:var(--max-w);margin:0 auto;padding-bottom:40px}
+.header-inner{display:flex;align-items:center;gap:1rem;padding:0.75rem 0}
+.logo{display:flex;align-items:center;gap:0.6rem;text-decoration:none;color:var(--accent)}
+.brand{font-weight:700;font-family:'Playfair Display', serif;font-size:1.05rem}
+.main-nav{margin-left:auto}
+.nav-list{list-style:none;display:flex;gap:1rem;margin:0;padding:0;align-items:center}
+.nav-list a{color:#333;text-decoration:none;padding:0.4rem 0.6rem;border-radius:6px}
+.nav-list a:hover{background:#f7f7f7}
+.cta-btn{margin-left:1rem;background:var(--accent);color:#fff;padding:0.6rem 0.9rem;border-radius:8px;text-decoration:none}
+#mobile-nav-toggle{display:none;background:none;border:none;font-weight:700}
+
+.hero{padding:3rem 0;background:linear-gradient(180deg,#fff 0%, #fffaf6 100%)}
+.hero-grid{display:grid;grid-template-columns:1fr 480px;gap:2rem;align-items:center}
+.hero-copy h1{font-family:'Playfair Display', serif;font-size:2.2rem;margin:0 0 0.5rem}
+.lead{font-size:1.05rem;color:var(--muted)}
+.kicker{color:var(--accent);font-weight:600;margin:0.6rem 0}
+.hero-actions{display:flex;gap:0.6rem;margin-top:1rem}
+.btn{display:inline-block;padding:0.6rem 0.9rem;border-radius:8px;text-decoration:none;border:1px solid #ddd;background:#fff}
+.btn.small{padding:0.4rem 0.6rem;font-size:0.95rem}
+.btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+.btn.outline{background:transparent;border-color:var(--accent);color:var(--accent)}
+.hero-image img{width:100%;border-radius:12px;object-fit:cover;display:block;max-height:360px}
+
+.section{padding:2.5rem 0}
+.section h2{font-family:'Playfair Display', serif;margin-bottom:0.4rem}
+.section-sub{color:var(--muted);margin-bottom:1rem}
+
+.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(25,25,25,0.05)}
+.card img{width:100%;height:180px;object-fit:cover}
+.card-body{padding:1rem}
+.price{font-weight:700;margin-top:0.5rem;color:var(--accent)}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0.6rem}
+.gallery-item{background:#eee;border:0;padding:0;border-radius:8px;overflow:hidden}
+.gallery-item img{width:100%;height:160px;object-fit:cover;display:block}
+
+.shop-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.product{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(20,20,20,0.05)}
+.product img{width:100%;height:180px;object-fit:cover}
+.product-body{padding:0.9rem}
+
+.cart-summary{margin-top:1rem;background:#fff;padding:0.8rem;border-radius:8px;border:1px dashed #eee}
+
+.about-list{display:flex;gap:1rem;list-style:disc;padding-left:1rem;margin-top:0.8rem}
+.contact-grid{display:grid;grid-template-columns:1fr 320px;gap:1.2rem}
+.contact-form label{display:block;margin-bottom:0.8rem}
+.contact-form input,.contact-form textarea{width:100%;padding:0.6rem;border-radius:6px;border:1px solid #ddd}
+
+.site-footer{border-top:1px solid #eee;padding:1.2rem 0;margin-top:2rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);z-index:200}
+.modal img{max-width:90%;max-height:80%;border-radius:10px}
+.modal .modal-close{position:absolute;top:24px;right:24px;background:none;border:0;color:#fff;font-size:2rem}
+
+@media (max-width:1000px){
+  .hero-grid{grid-template-columns:1fr}
+  .cards-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:700px){
+  .cards-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .shop-grid{grid-template-columns:1fr}
+  #mobile-nav-toggle{display:inline-block}
+  .nav-list{position:fixed;right:0;top:64px;background:#fff;flex-direction:column;padding:1rem;border-left:1px solid #eee;display:none}
+  .nav-list.show{display:flex}
+  .contact-grid{grid-template-columns:1fr}
+  .header-inner{gap:0.5rem}
+}
